@@ -4,10 +4,9 @@ function Header(){
 
 
     return(
-        <div>
-            <p>Hello!</p>
-            <p>I'm Ali</p>
-            <p>I'm a software engineer</p>
+        <div className="header">
+            <p className="text-header">Welcome to Ali's website!</p>
+
         </div>
     )
 }

@@ -17,7 +17,6 @@ body {
 .min-h-screen {
   min-height: 100vh;
   min-width: 600px;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -28,7 +27,7 @@ body {
 
 .bg-gray-900 {
   background-color: rgb(255, 255, 255);
-  height: auto;
+  height: fit-content;
   display: flex;
 }
 
@@ -87,7 +86,8 @@ body {
 }
 
 .text-green-500 {
-  color: #48bb78;
+  font-size: 1rem;
+  color: #00ff6a;
 }
 
 
@@ -168,4 +168,24 @@ body {
   transition-property: background-color;
   transition-duration: 150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header {
+  color: white;
+  background-color: white;
+  text-align: center;
+  padding: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 100px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.text-header {
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }

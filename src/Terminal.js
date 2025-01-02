@@ -29,22 +29,27 @@ const TerminalPortfolio = () => {
       'Available commands:',
       '- aboutMe: Learn about me',
       '- resume: View my resume',
-      '- linkedin: Open LinkedIn profile',
+      '- linkedin: Open LinkedIn profile', 
       '- github: Open GitHub profile',
       '- clear: Clear terminal',
-      '- help: Show this help message',
+      '- help: Show this help message'
     ],
     aboutme: () => [
       "Hi! I'm a Software Developer passionate about creating innovative solutions.",
       'I specialize in React, Node.js, and Python.',
       'Currently working on exciting projects in web development.',
     ],
+    projects: () => [
+      '╔════════════════════ PROJECTS ═════════════════════╗',
+      '║ Still curating... most projects are on my github! ║',
+      '╚═══════════════════════════════════════════════════╝'
+    ],
     resume: () => [
       '╔════════════════════ ALI MOHAMMED HAQ ════════════════════╗',
-      '║ SOFTWARE DEVELOPER | COMPUTER SCIENCE                     ║',
+      '║ SOFTWARE DEVELOPER | COMPUTER SCIENCE                    ║',
       '║ South Barrington, IL                                     ║',
-      '║ ahaq7@depaul.edu | (224) 517-7392                       ║',
-      '╚═══════════════════════════════════════════════════════════╝',
+      '║ ahaq7@depaul.edu | (224) 517-7392                        ║',
+      '╚══════════════════════════════════════════════════════════╝',
       '',
       '=== EDUCATION ===',
       'DePaul University – Chicago, IL (09/2023-Present)',
