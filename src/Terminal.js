@@ -1,12 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+
+const TypewriterText = ({ text }) => {
+  const [displayedText, setDisplayedText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < text.length) {
+      const timer = setTimeout(() => {
+        setDisplayedText(prev => prev + text[currentIndex]);
+        setCurrentIndex(prev => prev + 1);
+      }, 25); // Adjust typing speed here (milliseconds)
+
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex, text]);
+
+  return <span>{displayedText}</span>;
+};
 
 const TerminalPortfolio = () => {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState([
-    'Welcome to my portfolio! Type "help" to see available commands.'
+    { text: 'Welcome to my portfolio! Type "help" to see available commands.', completed: false }
   ]);
-
-
 
   const commands = {
     help: () => [
@@ -14,6 +30,7 @@ const TerminalPortfolio = () => {
       '- aboutMe: Learn about me',
       '- resume: View my resume',
       '- linkedin: Open LinkedIn profile',
+      '- github: Open GitHub profile',
       '- clear: Clear terminal',
       '- help: Show this help message',
     ],
@@ -73,7 +90,7 @@ const TerminalPortfolio = () => {
     ],
     'download-resume': () => {
       const link = document.createElement('a');
-      link.href = 'resume.pdf'; // You'll need to provide the actual PDF file
+      link.href = 'resume.pdf';
       link.download = 'AliHaq_Resume.pdf';
       link.click();
       return ['Downloading resume...'];
@@ -84,20 +101,34 @@ const TerminalPortfolio = () => {
       }, 1000);
       return ['Opening LinkedIn profile...'];
     },
-    clear: () => [],
+    github: () => {
+      setTimeout(() => {
+        window.location.href = 'https://github.com/Ali1182';
+      }, 1000);
+      return ['Opening GitHub profile...'];
+    },
+    clear: () => {
+      setOutput([{ text: 'Welcome to my portfolio! Type "help" to see available commands.', completed: false }]);
+      return [];
+    },
   };
 
   const handleCommand = cmd => {
     const lowercaseCmd = cmd.toLowerCase();
     if (commands[lowercaseCmd]) {
-      return commands[lowercaseCmd]();
+      const commandOutput = commands[lowercaseCmd]();
+      return commandOutput.map(text => ({ text, completed: false }));
     }
-    return [`Command not found: ${cmd}. Type "help" for available commands.`];
+    return [{ text: `Command not found: ${cmd}. Type "help" for available commands.`, completed: false }];
   };
 
   const handleKeyPress = e => {
     if (e.key === 'Enter') {
-      const newOutput = [...output, `> ${input}`, ...handleCommand(input)];
+      const newOutput = [
+        ...output,
+        { text: `> ${input}`, completed: true }, // Command input doesn't need typewriter
+        ...handleCommand(input)
+      ];
       setOutput(newOutput);
       setInput('');
     }
@@ -115,17 +146,10 @@ const TerminalPortfolio = () => {
         <div className='bg-black rounded p-4 h-96 overflow-y-auto font-mono text-green-500'>
           {output.map((line, i) => (
             <div key={i} className='mb-1'>
-              {line.startsWith('http') ? (
-                <a
-                  href={line}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='text-blue-400 hover:underline'
-                >
-                  {line}
-                </a>
+              {line.completed ? (
+                line.text
               ) : (
-                line
+                <TypewriterText text={line.text} />
               )}
             </div>
           ))}

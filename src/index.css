@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #2d3748;
+  background-color: black;
 }
 
 #root {
@@ -16,6 +16,7 @@ body {
 /* Container for the Terminal and Keyboard */
 .min-h-screen {
   min-height: 100vh;
+  min-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +27,9 @@ body {
 }
 
 .bg-gray-900 {
-  background-color: #1a202c;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  display: flex;
 }
 
 
@@ -61,7 +64,7 @@ body {
 
 /* Terminal Screen */
 .bg-black {
-  background-color: #000;
+  background-color: #000000;
   text-align: left;
 }
 
