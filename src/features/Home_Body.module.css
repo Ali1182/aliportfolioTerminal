@@ -1,0 +1,22 @@
+.home_body {
+    background-color: #081831;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Blade Runner';
+    justify-content: center;
+    width: 100%;
+}
+.text_home {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+.picture {
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}

@@ -1,0 +1,55 @@
+.header {
+    position: sticky;
+    background-color: #2B1718;
+    text-align: center;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 100px;
+    border: 2px solid #7d7c7c;
+    width: fit-content;
+    columns: 1;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+.text-header {
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+}
+.button {
+    color: rgb(190, 190, 190);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Blade Runner';
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+}
+
+.button:hover {
+    color: #fffcfc;
+}
+
+.button:focus {
+    background-color: #F78B04;
+    color: #ffffff;
+    outline: none;
+}
+
+.button:active {
+    background-color: #f0f0f0;
+}
+
+@font-face {
+    font-family: 'Blade Runner';
+    src: url('../assets/BladeRunner.TTF');
+}
+
