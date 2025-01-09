@@ -3,10 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: black;
+  background-color: #140919;
 }
-
-
 
 /* Container for the Terminal and Keyboard */
 .min-h-screen {

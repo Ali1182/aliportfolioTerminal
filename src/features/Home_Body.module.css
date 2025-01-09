@@ -1,16 +1,55 @@
+.background {
+    background-image: url('../../src/assets/BLADE-RUNNER-132023.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .home_body {
-    background-color: #081831;
-    min-height: 50vh;
+    background-color: #140919;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     font-family: 'Blade Runner';
     justify-content: center;
     width: 100%;
 }
-.text_home {
+.text_home_header {
+    color: #FF2602;
+    width: 75%;
+    font-size: 4rem;
+    text-align: left;
+    padding-left: 50px;
+    left: 0;
+    text-shadow: 0 0 5px #ff6a4f,
+                 0 0 10px #fba697;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 3px #ff4d2d,
+                     0 0 7px #ff7860;
+    }
+    to {
+        text-shadow: 0 0 8px #ffbcb0,
+                     0 0 12px #fde9e5;
+    }
+}
+.text_paragraph {
     color: #ffffff;
-    width: 100%;
-    text-align: center;
+    border: 2px solid #ffffff;
+    width: 75%;
+    margin-left: 50px;
+    background-color: rgba(20, 9, 25, 0.7);
+    line-height: 1.5;
+
+    padding: 20px;
+    font-family: 'CyberFont';
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 20px;
+    left: 0;
 }
 .picture {
     width: 20%;
@@ -19,4 +58,9 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 100px;
+}
+
+@font-face {
+    font-family: 'CyberFont';
+    src: url('../assets/cyberFont.ttf');
 }

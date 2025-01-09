@@ -1,6 +1,12 @@
+
+
 .header {
     position: sticky;
-    background-color: #2B1718;
+    top: 10px;
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    background-color: #1f133b;
     text-align: center;
     padding: 1px;
     font-family: 'Courier New', Courier, monospace;
@@ -9,9 +15,9 @@
     width: fit-content;
     columns: 1;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
-  }
+}
   
 .text-header {
     color: black;
