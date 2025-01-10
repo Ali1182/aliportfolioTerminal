@@ -15,35 +15,21 @@
     width: 100%;
 }
 .text_home_header {
-    color: #FF2602;
+    color: #ffffff;
     width: 75%;
     font-size: 4rem;
     text-align: left;
     padding-left: 50px;
     left: 0;
-    text-shadow: 0 0 5px #ff6a4f,
-                 0 0 10px #fba697;
-    animation: glow 2s ease-in-out infinite alternate;
 }
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 3px #ff4d2d,
-                     0 0 7px #ff7860;
-    }
-    to {
-        text-shadow: 0 0 8px #ffbcb0,
-                     0 0 12px #fde9e5;
-    }
-}
 .text_paragraph {
     color: #ffffff;
-    border: 2px solid #ffffff;
+    border: none;
     width: 75%;
     margin-left: 50px;
     background-color: rgba(20, 9, 25, 0.7);
     line-height: 1.5;
-
     padding: 20px;
     font-family: 'CyberFont';
     font-size: 1.5rem;

@@ -9,7 +9,6 @@ function Home_Body() {
             <p className={styles.text_paragraph}>
                 I am a software engineer with a passion for creating innovative solutions to complex problems.
                 I am a quick learner and I am always looking to expand my skills.
-                I am a team player and I am always looking to help my team succeed.
             </p>
 
         </div>
