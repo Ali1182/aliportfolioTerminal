@@ -9,7 +9,7 @@ body {
 
 /* Container for the Terminal and Keyboard */
 .min-h-screen {
-  min-height: vh;
+  min-height: 80vh;
   min-width: 600px;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@ body {
 
 
 .max-w-4xl {
+  margin-top: 4rem;
   max-width: 60rem;
 }
 
@@ -68,7 +69,7 @@ body {
 
 
 .h-96 {
-  height: 24rem; /* Height that was specified in React code */
+  height: 35rem; /* Height that was specified in React code */
 }
 
 

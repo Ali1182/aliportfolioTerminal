@@ -1,29 +1,42 @@
 .card{
-    border: 2px soild black;
     color: black;
     border-radius: 60px;
     padding: 20px;
     margin: 10px;
     text-align: center;
-    max-width: 250px;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    max-width: 200px;
     height: auto;
-    background-color: white;
+    background-color: #FEFFFF;
+    box-shadow: #FEFFFF 0px 00px 20px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    transform-style: preserve-3d;
 }
 .image{
-
-    max-width: 80%;
+    max-width: 50%;
     height: auto;  
     border-radius: 20%;
     margin-bottom: 10px;
 }
 .cardTitle{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 10px;
+    font-family: monospace;
+}
+.cardText{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: monospace;
 }
 .card:hover{
-    background-color: blue;
+    background-color: #001434;
 }
 .card:hover .cardTitle{
+    color: white;
+}
+.card:hover .cardText{
     color: white;
 }
