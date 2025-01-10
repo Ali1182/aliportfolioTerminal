@@ -2,7 +2,7 @@ import './App.css';
 import TerminalPortfolio from './Terminal';
 import Header from './features/Header';
 import Home_Body from './features/Home_Body';
-import ProjectComponent from './features/ProjectComponents'
+import Projects from './features/Projects';
 
 function App() {
   return (
@@ -11,10 +11,13 @@ function App() {
       <section id="home">
         <Home_Body />
       </section>
-      <section id="projects">
+      <section id="about">
         <TerminalPortfolio />
       </section>
-      <ProjectComponent/>
+      <section id="projects">
+
+      </section>
+      <Projects/>
     </div>
   );
 }

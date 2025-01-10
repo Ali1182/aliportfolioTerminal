@@ -21,3 +21,9 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
+.card:hover{
+    background-color: blue;
+}
+.card:hover .cardTitle{
+    color: white;
+}

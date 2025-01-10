@@ -171,17 +171,6 @@ const TerminalPortfolio = () => {
         </div>
       </div>
 
-      {/* Mechanical Keyboard */}
-      <div className='w-full max-w-4xl bg-gray-700 p-8 rounded-b-lg grid grid-cols-12 gap-2'>
-        {Array(60)
-          .fill()
-          .map((_, i) => (
-            <div
-              key={i}
-              className='aspect-square bg-gray-800 rounded-md shadow-md hover:bg-gray-600 transition-colors'
-            />
-          ))}
-      </div>
     </div>
   );
 };
