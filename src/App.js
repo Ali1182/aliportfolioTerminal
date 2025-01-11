@@ -8,7 +8,6 @@ import Resume from './features/Resume';
 function App() {
   return (
     <div className="App">
-      <Header />
       <section id="home">
         <Home_Body />
       </section>
