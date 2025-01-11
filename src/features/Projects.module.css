@@ -5,3 +5,18 @@
     gap: 1rem;
     margin: 5rem;
 }
+.divMain{
+    color: white;
+
+    justify-content: center;
+}
+
+.heading{
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+    justify-content: center;
+}
+.heading:hover{
+    color: #60a5fa;
+}

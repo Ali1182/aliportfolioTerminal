@@ -9,7 +9,9 @@ function Projects(){
 
 
     return(
-        <div className = {styles.projects}>
+        <div className={styles.divMain}>
+            <h1 className={styles.heading}>Projects</h1>
+            <div className={styles.projects}>
             <ProjectComponents
             image={image1}
             title='Gas Calculator App'
@@ -24,9 +26,8 @@ function Projects(){
             image={image3}
             title = 'Syluz Ecommerce Store '
             text = 'This is an ecommerce store that I created that sells a variety of products.'
-            
-            
             />
+            </div>
         </div>
     )
 }

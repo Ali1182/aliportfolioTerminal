@@ -3,6 +3,7 @@ import TerminalPortfolio from './Terminal';
 import Header from './features/Header';
 import Home_Body from './features/Home_Body';
 import Projects from './features/Projects';
+import Resume from './features/Resume'; 
 
 function App() {
   return (
@@ -15,9 +16,12 @@ function App() {
         <TerminalPortfolio />
       </section>
       <section id="projects">
-
+        <Projects/>
       </section>
-      <Projects/>
+      <section id="resume">
+        <Resume/>
+      </section>
+
     </div>
   );
 }

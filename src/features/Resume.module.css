@@ -1,0 +1,39 @@
+.div{
+    background-color: 140919;
+    padding: 50px;
+    margin: auto;
+    justify-content: center;
+}
+
+.resume{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    border-radius: 60px;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    height: auto;
+    background-color: #FEFFFF;
+    box-shadow: #FEFFFF 0px 00px 40px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    transform-style: preserve-3d;
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    font-family: monospace;
+    margin-bottom: 70px;   
+}
+
+
+.imageResume{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
