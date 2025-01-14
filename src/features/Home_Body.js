@@ -7,7 +7,6 @@ function Home_Body() {
                 Welcome to Ali Haq's website....
             </h1>
 
-
         </div>
     )
 }
